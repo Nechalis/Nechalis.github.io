@@ -81,6 +81,20 @@ ul.menu li a:hover:before {
     transition: all .5s ease;
 }
 
+.header a {
+    color: #333;
+    font-size: 20px;
+    padding: 15px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.header a:hover {
+    color: #ccc;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
 .sitecontent {
 	min-height: 100%;
 	margin-bottom: -35px; 
