@@ -86,6 +86,12 @@ ul.menu li a:hover:before {
 	margin-bottom: -35px; 
 }
 
+.stickyfooter {
+	border-top: solid #ccc;
+	border-bottom: solid #ccc;
+	border-width: 1px;
+}
+
 .sitecontent:after {
 	content: "";
 	display: block;
