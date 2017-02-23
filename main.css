@@ -58,3 +58,17 @@ ul.menu li a:hover:before {
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
+
+.footer a {
+    color: #333;
+    font-size: 20px;
+    padding: 15px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.footer a:hover {
+    color: #ccc;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
