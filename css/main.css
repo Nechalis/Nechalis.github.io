@@ -59,6 +59,11 @@ ul.menu li a:hover:before {
 	transform: scaleX(1);
 }
 
+.content li {
+	border-bottom: solid #ccc;
+	padding-bottom: 5px;
+}
+
 .stickyfooter a {
     color: #333;
     font-size: 20px;
@@ -68,7 +73,7 @@ ul.menu li a:hover:before {
 }
 
 .stickyfooter a:hover {
-    color: #ccc;
+    color: white;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
