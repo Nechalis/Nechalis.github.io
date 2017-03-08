@@ -1,9 +1,17 @@
+body {
+	margin:0;
+   	padding:0;
+   	height:100%;
+}
+
 h1{
 	text-align: center;
 }
 
 .sitecontent {
-	height: 95%;
+	min-height: 100%;
+   	position: relative;
+   	padding-bottom: 60px; 
 }
 
 div.menucontainer{
@@ -99,12 +107,9 @@ ul.menu li a:hover:before {
     transition: all .5s ease;
 }
 
-footer {
-	height: 5%;
-	background-color: #ccc;
-}
-
 .stickyfooter {
-	height: 5%;
+	position:absolute;
+	bottom:0;
+	height:60px;
 	background-color: #ccc;
 }
