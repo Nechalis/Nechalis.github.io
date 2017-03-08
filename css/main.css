@@ -58,3 +58,11 @@ ul.menu li a:hover:before {
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
+
+footer {
+	background-color: #ccc;
+}
+
+.stickyfooter {
+	background-color: #ccc;
+}
