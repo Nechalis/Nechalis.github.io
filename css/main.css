@@ -2,6 +2,10 @@ h1{
 	text-align: center;
 }
 
+.sitecontent {
+	height: 95%;
+}
+
 div.menucontainer{
 	border-top: solid #ccc;
 	border-bottom: solid #ccc;
@@ -70,8 +74,12 @@ ul.menu li a:hover:before {
 	padding-top: 5px;
 }
 
+.posts a {
+	text-decoration: none;
+}
+
 .post-icon {
-	padding-right: 3px;
+	padding-right: 5px;
 	font-size: 13px;
 	padding-bottom: 5px;
 	padding-top: 5px;
@@ -92,9 +100,11 @@ ul.menu li a:hover:before {
 }
 
 footer {
+	height: 5%;
 	background-color: #ccc;
 }
 
 .stickyfooter {
+	height: 5%;
 	background-color: #ccc;
 }
