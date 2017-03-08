@@ -67,11 +67,14 @@ ul.menu li a:hover:before {
 	border-bottom: solid #ccc;
 	border-width: 1px;
 	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 .post-icon {
 	padding-right: 3px;
-	font-size: 10px;
+	font-size: 13px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 .stickyfooter a {
