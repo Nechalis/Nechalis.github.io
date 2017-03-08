@@ -108,8 +108,9 @@ ul.menu li a:hover:before {
 }
 
 .stickyfooter {
-	position:absolute;
-	bottom:0;
-	height:60px;
+	position: absolute;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
 	background-color: #ccc;
 }
