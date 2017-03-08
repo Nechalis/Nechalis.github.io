@@ -8,6 +8,10 @@ h1{
 	text-align: center;
 }
 
+.header {
+	height: 150px;
+}
+
 .sitecontent {
 	min-height: 100%;
    	position: relative;
