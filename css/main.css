@@ -59,9 +59,19 @@ ul.menu li a:hover:before {
 	transform: scaleX(1);
 }
 
+.content ul {
+  list-style-type: none;
+}
+
 .content li {
 	border-bottom: solid #ccc;
+	border-width: 1px;
 	padding-bottom: 5px;
+}
+
+.post-icon {
+	padding-right: 3px;
+	font-size: 10px;
 }
 
 .stickyfooter a {
