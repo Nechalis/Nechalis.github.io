@@ -6,7 +6,7 @@ div.menucontainer{
 	border-top: solid #ccc;
 	border-bottom: solid #ccc;
 	border-width: 1px;
-	margin: 0 auto 35px 0;
+	margin: 0 auto 15px 0;
 	text-align: center;
 }
 
@@ -57,6 +57,20 @@ ul.menu li a:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
+}
+
+.stickyfooter a {
+    color: #333;
+    font-size: 20px;
+    padding: 15px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.stickyfooter a:hover {
+    color: #ccc;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 footer {
