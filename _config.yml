@@ -2,3 +2,6 @@ name: Danko Nechala, She left
 markdown: kramdown
 future: true
 permalink: /blog/:year/:month/:day/:title
+collections:
+ projects:
+  output: true
