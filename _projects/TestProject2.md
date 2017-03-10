@@ -2,7 +2,7 @@
 layout: project
 title: "Web publishing"
 name: "Github pages"
-customer: "Fiit STU"
+for: "/img/fiit_logo.gif"
 date: 2017-03-09
 url: "nechalis.github.io"
 ---

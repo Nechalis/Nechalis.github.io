@@ -2,7 +2,7 @@
 layout: project
 title: "Bachelor thesis"
 name: "Impact of color on visual attention"
-customer: "Fiit STU"
+for: "/img/fiit_logo.gif"
 date: 2017-03-09
 url: "nechalis.github.io"
 ---

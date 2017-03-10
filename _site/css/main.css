@@ -171,7 +171,7 @@ ul.menu li a:hover:before {
 }
 
 .info-wrapper {
-	padding: 0px 35px 0px 35px;
+	padding: 0px 30px 0px 30px;
 }
 
 .title {
@@ -218,4 +218,8 @@ a[bubbletooltip]:hover:before, a[bubbletooltip]:hover:after
 {
     visibility: visible;
     -moz-transition: visibility 0s linear .3s;
+}
+
+.home {
+	padding: 100px 0px 100px 0px;
 }
