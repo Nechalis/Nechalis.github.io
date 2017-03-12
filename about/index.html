@@ -1,3 +1,15 @@
 ---
-layout: default
+layout: about
 ---
+
+<div class="skills content">
+	<ul>
+		{% for skill in site.skills %}
+			<li>
+				<p><b>{{ skill.language }}</b> : {{ skill.skill }}</p>
+				<p>{{ skill.description }}</p>
+				Tag: <a href="/tags#{{ skill.tag }}" class="tag">{{ skill.tags }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

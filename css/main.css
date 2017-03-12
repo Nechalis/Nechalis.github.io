@@ -349,3 +349,10 @@ a[bubbletooltip]:hover:before, a[bubbletooltip]:hover:after
     margin-right: auto;
     text-align: center;
 }
+
+.photo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

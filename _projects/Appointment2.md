@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Web publishing appointment 1"
-name: "Appointment 1"
+title: "Web publishing appointment 2"
+name: "Appointment 2"
 enrollby: "FIIT STU"
 for: "/img/fiit_logo.gif"
 date: 2017-03-12

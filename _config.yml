@@ -13,3 +13,5 @@ syntax_highlighter: rouge
 collections:
  projects:
   output: true
+ skills:
+  output: true  

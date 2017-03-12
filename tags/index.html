@@ -5,6 +5,7 @@ layout: default
 <h1>Tags:</h1>
 
 {% assign tags =  site.projects | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% assign skilltags =  site.skills | map: 'tags' | join: ','  | split: ',' | uniq %}
 
 <div class"content">
 	<ul class="tags">
@@ -15,6 +16,16 @@ layout: default
 		      	{{ tag }}
 	      	</a>
 	    </li>
+	  {% endfor %}
+	  {% for tag in skilltags %}
+	  	{% if tags contains tag %}
+    	{% else %}
+    		<li>
+		  		<a href="#{{ tag | cgi_escape }}" class="tag">
+			      	{{ tag }}
+		      	</a>
+	      	<li>
+      	{% endif %}
 	  {% endfor %}
 	</ul>
 </div>
