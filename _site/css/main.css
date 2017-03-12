@@ -342,3 +342,10 @@ a[bubbletooltip]:hover:before, a[bubbletooltip]:hover:after
 .tag:hover::after {
 	border-left-color: #333;
 }
+
+.page404 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
