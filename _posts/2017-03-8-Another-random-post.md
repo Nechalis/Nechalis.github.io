@@ -1,7 +1,0 @@
----
-layout: post
-title: "Nechalis, Random post"
-date: 2017-03-08
----
-
-Just a random post to test things out.

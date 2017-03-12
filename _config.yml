@@ -1,7 +1,15 @@
 name: Danko Nechala, She left
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+smileytheme: MSN 
 future: true
 permalink: /blog/:year/:month/:day/:title
+highlighter: rouge
+syntax_highlighter: rouge
 collections:
  projects:
   output: true

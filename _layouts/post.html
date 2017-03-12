@@ -2,9 +2,11 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="wrap-header">
+	<h1 style="text-align:center;">{{ page.title | upcase }}: {{page.header}}</h1>
+	<p class="meta" style="text-align:center;"><b>{{ page.date | date_to_string }}</b></p>
+</div>
 
-<div class="post">
-  {{ content }}
+<div class="post content">
+ 	{{ content }}
 </div>

@@ -3,14 +3,20 @@ layout: default
 ---
 
 <div class="wrap-header">
-	<h1>{{ page.title }} - {{page.name}}</h1>
+	<h1>{{ page.title | upcase }}: {{page.name | upcase}}</h1>
 </div>
 
-<div class="project">
-	<h3>Project for: </h3>
-	<img src="{{ page.for }}"}}></img>
-	<h3>Added on: </h3>
-	<p class="meta">{{ page.date | date_to_string }}</p>
-	<h3>Description: </h3>
-	{{ content }}
+<div class="content">
+	<div class="project">
+		<h3>Project for: </h3>
+		<img src="{{ page.for }}"}}></img>
+		<h3>Added on: </h3>
+		<p class="meta">{{ page.date | date_to_string }}</p>
+		<h3>Tags:</h3>
+		{% for tag in page.tags %}
+			<a href="/tags#{{ tag }}" class="tag">{{ tag }}</a>
+		{% endfor %}
+		<h3>Description: </h3>
+		{{ content }}
+	</div>
 </div>

@@ -10,6 +10,8 @@
 </head>
 
 <body>
+	<script src="/scripts/scripts.js"></script>
+
 	<div class="container-fluid sitecontent">
 		<div class="container header">
 			<img class="img-responsive center-block" src="https://s-media-cache-ak0.pinimg.com/736x/84/70/d6/8470d6640f3b88706fbcc4a1c62df5c1.jpg" alt="Nechalis"></img>
@@ -18,29 +20,16 @@
 			<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-				<ul class="menu">
-					<li><a href="/">Home</a></li>
-					<li><a href="/blog">Blog</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="/projects">Projects</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
+				{% include menu.html %}
 			</div>
 			<div class="col-md-2"></div>
 			</div>
 		</div>
-		<div class="container content">
+		<div class="container allcontent">
 			{{ content }}
 		</div>		
 	</div>
 
-	<footer class="stickyfooter">
-		<div class="container-fluid text-center brands">
-	        <a href="#"><i class="fa fa-facebook"></i></a>
-	        <a href="#"><i class="fa fa-instagram"></i></a>
-	        <a href="#"><i class="fa fa-tumblr"></i></a>
-	        <a href="#"><i class="fa fa-skype"></i></a>
-    	</div>
-	</footer>
+	{% include footer.html %}
 </body>
 </html>
