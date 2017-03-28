@@ -145,6 +145,11 @@ ul.topnav{
 	padding-top: 15px;
 }
 
+.projectcontent li {
+  	padding-top: 5px;
+  	padding-bottom: 5px;
+}
+
 .posts a {
 	text-decoration: none;
 }
