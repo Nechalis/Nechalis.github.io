@@ -4,9 +4,9 @@ title: "Web publishing appointment 2"
 name: "Appointment 2"
 enrollby: "FIIT STU"
 for: "/img/fiit_logo.gif"
-date: 2017-03-12
+date: 2017-03-28
 tags: webpublishing xml docbook xslt
-url: "Appointment1"
+url: "Appointment2"
 ---
 <p>Našou úlohou bolo spracovať bakalársku prácu do formátu DocBook. Pôvodne bola moja bakalárska práca napisána v Latex-u a snažil som sa aby sa tá v DocBooku čo najviac podobala pôvodnej.</p>
 
