@@ -8,7 +8,7 @@ date: 2017-03-28
 tags: webpublishing xml docbook xslt
 url: "Appointment2"
 ---
-<p>Našou úlohou bolo spracovať bakalársku prácu do formátu DocBook. Pôvodne bola moja bakalárska práca napisána v Latex-u a snažil som sa aby sa tá v DocBooku čo najviac podobala pôvodnej.</p>
+<p>Našou úlohou bolo spracovať bakalársku prácu do formátu DocBook. Pôvodne bola moja bakalárska práca napisána v Latex-u a snažil som sa aby sa tá v DocBooku čo najviac podobala pôvodnej. Na transformáciu zdrojového kódu do pdf som použil šasblónu od pána Jiřího Kosku s viacerými úpravami pre dosiahnutie želaného efektu.</p>
 
 <b>Požiadavky na vypracovanie:</b>
 <ul>
@@ -75,5 +75,21 @@ url: "Appointment2"
 	</xsl:template>
 {% endhighlight %}
 
+<li>Aby sa stránky anotácie, četsného prehlásenia a poďakovania podobali na tie v bakalárke tak som v súbore <span style="color:red">thesis</span> zmenil nasledujúce riadky pre abstract:</li>
+
+{% highlight xml %}
+	<xsl:when test="self::abstract">2cm</xsl:when>
+	.
+	.
+	.
+	<xsl:attribute name="text-align">
+       <xsl:choose>
+		   <xsl:when test="self::abstract">left</xsl:when>
+		   <xsl:otherwise>center</xsl:otherwise>
+       </xsl:choose>
+    </xsl:attribute>
+{% endhighlight %}
+
+<li>V Dodatku som pre ukážku použil aj element <b>programlisting<b> na vzorovú ukážku kódov v DocBook-u. Vzorové kódy som pridal do tagov <b>&lt;![CDATA[text]]&gt;</b> aby som predišiel spracovaniu špeciálnych symbolov.</li>
 <li>Okrem iného som použil množstvo ďalších elementov na upravenie vzhľadu, ktoré však nemusia byť extra spomínané.</li>
 </ul>
