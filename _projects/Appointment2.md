@@ -83,13 +83,15 @@ url: "Appointment2"
 	.
 	.
 	<xsl:attribute name="text-align">
-       <xsl:choose>
-		   <xsl:when test="self::abstract">left</xsl:when>
-		   <xsl:otherwise>center</xsl:otherwise>
-       </xsl:choose>
-    </xsl:attribute>
+	 <xsl:choose>
+	  <xsl:when test="self::abstract">left</xsl:when>
+	  <xsl:otherwise>center</xsl:otherwise>
+	 </xsl:choose>
+	</xsl:attribute>
 {% endhighlight %}
 
-<li>V Dodatku som pre ukážku použil aj element <b>programlisting<b> na vzorovú ukážku kódov v DocBook-u. Vzorové kódy som pridal do tagov <b>&lt;![CDATA[text]]&gt;</b> aby som predišiel spracovaniu špeciálnych symbolov.</li>
+<li>V Dodatku som pre ukážku použil aj element <b>programlisting</b> na vzorovú ukážku kódov v DocBook-u. Vzorové kódy som pridal do tagov
+	<b>&lt;![CDATA[text]]&gt;</b> aby som predišiel spracovaniu špeciálnych symbolov.
+</li>
 <li>Okrem iného som použil množstvo ďalších elementov na upravenie vzhľadu, ktoré však nemusia byť extra spomínané.</li>
 </ul>
