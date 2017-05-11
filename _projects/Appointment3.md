@@ -5,7 +5,7 @@ name: "Appointment 3"
 enrollby: "FIIT STU"
 for: "/img/fiit_logo.gif"
 date: 2017-5-11
-tags: webpublishing xsd xml xslt 
+tags: webpublishing xsd xml xsltt 
 url: "Appointment3"
 ---
 
@@ -21,7 +21,14 @@ url: "Appointment3"
 	<li>Pre konverziu medzi .xml a .pdf som vytvoril transformáciu transform-fo.xsl, ktorá je využitá v pdf_xep so vstupom v podobe project.xml</li>
 </ul>
 
-<p>Root prvkom .xml dokumentu je element &gt;presentation&lt;, ktorý obsahuje element &gt;slides&lt;. Tento element zhlukuje elementy &gt;slide&lt; dokopy. Tento element obsahuje element &gt;title&lt; v podobe titulky daného slidu. Element &gt;slide&lt; môže byť ďalej modifikovaný podľa toho, ktorú špecifikáciu do neho vložím. Bližšie špecifikácie elementu &gt;slide&lt; sú:</p>
+<p>Na vygenerovanie jednotlivých súborov som použil nasledovné:</p>
+
+<ul>
+	<li>Pre XHTML - je potrebný SAXON Home Edition, pricom slidy sa vygenerujú pomocou príkazu <b>java -jar saxon9he.jar -s:project.xml -xsl:transform.xsl</b></li>
+	<li>Pre PDF - je použitý pdf_xep rovnako ako pri zadaní z docbóku vo forme <b>pdf_xep project.xml</b></li>
+</ul>
+
+<p>Root prvkom .xml dokumentu je element &lt;presentation&gt;, ktorý obsahuje element &lt;slides&gt;. Tento element zhlukuje elementy &lt;slide&gt; dokopy. Tento element obsahuje element &lt;title&gt; v podobe titulky daného slidu. Element &lt;slide&gt; môže byť ďalej modifikovaný podľa toho, ktorú špecifikáciu do neho vložím.Bližšie špecifikácie elementu &lt;slide&gt; sú:</p>
 
 <ul>
 	<li>bulletslide = slide s možnosťou použitia listu</li>
@@ -43,7 +50,7 @@ url: "Appointment3"
 	</slide>
 {% endhighlight %}
 
-<p>Pri tvorbe obsahu alebo prechádzaní jednotlivých slide-ov pre aplikovanie template-ov som používal cyklus, ktorý iteruje cez všetky slidy a vykonáva potrebné úkony. Cyklus bol použitý v nasledujúcej forme:</p>
+<p>Pri tvorbe obsahu alebo prechádzaní jednotlivých slide-ov pre aplikovanie template-ov som používal cyklus, ktorý iteruje cez všetky slidy a vykonáva potrebné úkony. Súbory slidov sú vytvorené vo forme slidxeX.html, pričom X je číslo/pozícia slajdu. Cyklus bol použitý v nasledujúcej forme:</p>
 
 {% highlight xml %}
 	<xsl:for-each select="$allslides/slide">
@@ -51,7 +58,7 @@ url: "Appointment3"
   	</xsl:for-each>
 {% endhighlight %}
 
-<p>Pri transformácii z .xml do .pdf sme použili súbor odovzdaný pod menom transform-fo.xsl. Okrem dizajnu slidov som vytvoril možnosť pre statický footer v spodnej časti slajdu. Pri rozhodovaní aký dizajn použiť som používal podobný prístup pomocou cyklu. Na transformáciu som použil modifikovaný bat súbor <b>pdf_xep.bat</b>, v ktorom som pozmenili len to, z ktorej transformácie sa má čerpať. Názarné ukážky transformácie je možné vidieť tu:</p>
+<p>Pri transformácii z .xml do .pdf sme použili súbor odovzdaný pod menom transform-fo.xsl. Okrem dizajnu slidov som vytvoril možnosť pre statický footer v spodnej časti slajdu. Pri rozhodovaní aký dizajn použiť som používal podobný prístup pomocou cyklu. Na transformáciu som použil modifikovaný bat súbor <b>pdf_xep.bat</b>, v ktorom som pozmenili len to, z ktorej transformácie sa má čerpať. Názorné ukážky transformácie je možné vidieť tu:</p>
 
 {% highlight xml %}
 	<!-- Výber templatu, ktorý bude použitý na vytvorenie dizajnu slidu -->
@@ -115,7 +122,7 @@ url: "Appointment3"
 {% endhighlight %}
 
 {% highlight xml %}
-	<!-- Časť, ktorá hovorí o tom, že pokiaľ je zvolena pozícia slidu posledná, tak nepridáme button na prekliknut na dalšiu stranu-->
+	<!-- Časť, ktorá hovorí o tom, že pokiaľ je zvolena pozícia slidu posledná, tak nepridáme button na prekliknut na další slide-->
 	<xsl:if test="position() != last()">
         	<a href="slide{position()+1}.html" class="button">Next</a>
     	</xsl:if>
